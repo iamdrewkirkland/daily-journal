@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="journal-body">
     <script src="scripts/main.js"></script>
+    <h1>In My Feelings</h1>
+    <form class="journal-form" action="">
+        <fieldset class="journal-set">
+            <label for="journalDate" class="journal-label">DATE</label>
+            <input type="date" name="journalDate" id="journalDate">
+            <label for="journalTopic" class="journal-label">TOPICS</label>
+            <input type="text" name="journalTopic" id="journalTopic">
+            <label for="journalEntry" class="journal-label">JOURNAL ENTRY</label>
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="10" placeholder="Tell me how you REALLY feel."></textarea>
+            <label for="journalMood" class="journal-label">MOOD</label>
+            <select name="journalMood" id="journalMood">
+                <option value="ecstatic">ecstatic</option>
+                <option value="happy">happy</option>
+                <option value="meh" selected>meh</option>
+                <option value="melancholy">melancholy</option>
+                <option value="disappointed">disappointed</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="SUBMIT JOURNAL ENTRY">
+    </form>
+
 </body>
 </html>
