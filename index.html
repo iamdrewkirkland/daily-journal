@@ -8,17 +8,18 @@
 </head>
 <body class="journal-body">
     <script src="scripts/main.js"></script>
-    <h1>In My Feelings</h1>
+    <h1 class="journal-title">In My Feelings</h1>
     <form class="journal-form" action="">
-        <fieldset class="journal-set">
-            <label for="journalDate" class="journal-label">DATE</label>
-            <input type="date" name="journalDate" id="journalDate">
-            <label for="journalTopic" class="journal-label">TOPICS</label>
-            <input type="text" name="journalTopic" id="journalTopic">
-            <label for="journalEntry" class="journal-label">JOURNAL ENTRY</label>
-            <textarea name="journalEntry" id="journalEntry" cols="30" rows="10" placeholder="Tell me how you REALLY feel."></textarea>
-            <label for="journalMood" class="journal-label">MOOD</label>
-            <select name="journalMood" id="journalMood">
+        <fieldset class="form-set">
+            <legend class="form-legend">JOURNAL ENTRY</legend>
+            <label for="journalDate" class="form-label">DATE</label>
+            <input class="form-input" type="date" name="journalDate" id="journalDate">
+            <label for="journalTopic" class="form-label">TOPICS</label>
+            <input class="form-input" type="text" name="journalTopic" id="journalTopic" size="50">
+            <label for="journalEntry" class="form-label">JOURNAL ENTRY</label>
+            <textarea class="form-input" name="journalEntry" id="journalEntry" cols="50" rows="10" placeholder="Tell me how you REALLY feel."></textarea>
+            <label for="journalMood" class="form-label">MOOD</label>
+            <select class="form-input" name="journalMood" id="journalMood">
                 <option value="ecstatic">ecstatic</option>
                 <option value="happy">happy</option>
                 <option value="meh" selected>meh</option>
@@ -26,7 +27,7 @@
                 <option value="disappointed">disappointed</option>
             </select>
         </fieldset>
-        <input type="submit" value="SUBMIT JOURNAL ENTRY">
+        <input class="submit-button" type="submit" value="SUBMIT JOURNAL ENTRY">
     </form>
 
 </body>

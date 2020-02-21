@@ -1,0 +1,7 @@
+@import './form.css';
+@import './button.css';
+
+.journal-title {
+    justify-self: center;
+    max-width:100%;
+}
