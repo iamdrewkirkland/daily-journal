@@ -7,7 +7,7 @@
 .form-set {
     display: flex;
     flex-flow: column nowrap;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .form-legend {
@@ -15,10 +15,9 @@
 }
 
 .form-label {
-    align-self: center;
+    text-align: center;
 }
 
 .form-input {
    size:"50";
-   /* align-self: center; */
 }
